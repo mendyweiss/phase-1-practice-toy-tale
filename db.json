@@ -10,13 +10,13 @@
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": "9"
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": "4111 +111"
     },
     {
       "id": 4,
@@ -47,6 +47,60 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": 1
+    },
+    {
+      "name": "Mendy Weiss",
+      "image": "https://png.pngtree.com/png-clipart/20220130/origi…en-reading-children-reading-png-image_7246754.png",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Brownie Head",
+      "image": "\thttps://freepngimg.com/thumb/toy_story/109061-story-toy-png-free-photo.png",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "Mrs. Electric",
+      "image": "https://freepngimg.com/thumb/toy_story/177815-picture-story-toy-bullseye-download-hq.png",
+      "likes": 0,
+      "id": 11
+    },
+    {
+      "name": "Collection",
+      "image": "https://freepngimg.com/thumb/toy_story/109067-story-toy-free-clipart-hd.png",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": 0,
+      "id": 13
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": 0,
+      "id": 14
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": 0,
+      "id": 15
+    },
+    {
+      "name": "Collection 2",
+      "image": "https://freepngimg.com/thumb/toy_story/109053-story-toy-character-free-clipart-hq.png",
+      "likes": 0,
+      "id": 16
+    },
+    {
+      "name": "Collection 3",
+      "image": "https://freepngimg.com/thumb/toy_story/109053-story-toy-character-free-clipart-hq.png",
+      "likes": 0,
+      "id": 17
     }
   ]
 }
