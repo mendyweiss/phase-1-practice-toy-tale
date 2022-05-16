@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function toyCardBuilder (element) {
   const addCard = document.createElement('div')
   addCard.setAttribute('class', 'card')
+  addCard.setAttribute('id', element.name)
   const toyName = document.createElement('h2')
   toyName.textContent = element.name
   const toyPic = document.createElement('img')
@@ -30,7 +31,6 @@ function toyCardBuilder (element) {
   likeCount.textContent = element.likes
   const likeButton = document.createElement('button')
   likeButton.setAttribute('class', 'like-btn')
-  likeButton.setAttribute('id', element.id)
   likeButton.addEventListener('click', () => {patchFunc(element)})
   addCard.append(toyName, toyPic, likeCount, likeButton)
   document.querySelector('#toy-collection').append(addCard)
@@ -38,7 +38,7 @@ function toyCardBuilder (element) {
 
 
 
-
+//get
 
 function fetchFunc () {
   fetch('http://localhost:3000/toys')
@@ -48,6 +48,8 @@ function fetchFunc () {
     })
     .catch(err => {console.log(err.message)})
 }
+
+//post
 
 function postFunc () {
   function userInput (){
@@ -72,8 +74,11 @@ function postFunc () {
   .then(element => toyCardBuilder(element))
 }
 
+//patch
+
+
 function patchFunc (card) {
-  let cardLikesAdder = card.likes +=1
+  let cardLikesAdder = (card.likes +=1)
   fetch(`http://localhost:3000/toys/${card.id}`, {
     method:"PATCH",
     headers: {
@@ -85,10 +90,8 @@ function patchFunc (card) {
     })
   })
   .then(resp => resp.json())
-  .then(data => {
-    console.log(data)
-    const likesParagraph = document.querySelector(`#${card.id}`).previousElementSibling()
-    likesParagraph.textContent = cardLikesAdder
+  .then(() => {
+    document.getElementById(`${card.name}`).childNodes[2].textContent = cardLikesAdder
   })
 }
 
