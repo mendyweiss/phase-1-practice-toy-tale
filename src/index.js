@@ -31,6 +31,7 @@ function toyCardBuilder (element) {
   likeCount.textContent = element.likes
   const likeButton = document.createElement('button')
   likeButton.setAttribute('class', 'like-btn')
+  likeButton.setAttribute('id', element.id)
   likeButton.addEventListener('click', () => {patchFunc(element)})
   addCard.append(toyName, toyPic, likeCount, likeButton)
   document.querySelector('#toy-collection').append(addCard)
